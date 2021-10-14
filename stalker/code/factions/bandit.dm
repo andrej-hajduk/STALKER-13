@@ -33,7 +33,7 @@ Assistant
 	selection_color = "#000000"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access(
-	whitelist_only = 0
+	whitelist_only = 1
 	outfit = /datum/outfit/job/banditboss
 	real_rank = "Lieutenant"
 
@@ -43,7 +43,7 @@ Assistant
 	faction = "Station"
 	total_positions = 1
 	locked = 1
-	spawn_positions = -1
+	spawn_positions = 1
 	description = "Bandits are a group of mostly ex-criminals who came in the Zone either to escape from the law, trade weapons or make money. They are a force of chaos within the Zone, and are essentially bad people who do bad things to good people."
 	enforces = "Help organize the bandits if the Bandit Boss isn't present and act as second-in-command, rip off anyone who isn't a Bandit however you can, arm your fellow bandits and provide them tools to further antagonize the Zone."
 	forbids = "Randomly, worldessly murder others, work with Duty except under extraordinary circumstances, jeopordize your entire faction over something insignificant."
@@ -51,8 +51,7 @@ Assistant
 	selection_color = "#000000"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()
-	whitelist_only = 0
-	limit_per_player = 3
+	whitelist_only = 1
 	outfit = /datum/outfit/job/bandit_barman
 
 /datum/outfit/job/bandit
@@ -79,7 +78,7 @@ Assistant
 		/obj/item/crowbar/large)
 	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/restraints/handcuffs/cable/zipties, /obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/reagent_containers/pill/stalker/aptechka/civilian,/obj/item/flashlight/lantern,/obj/item/clothing/accessory/patch/bandits)
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/storage/firstaid/stalker/civillian,/obj/item/flashlight/lantern,/obj/item/clothing/accessory/patch/bandits)
 	r_pocket = pick(
 		/obj/item/gun/ballistic/automatic/pistol/pm,
 		/obj/item/gun/ballistic/automatic/pistol/pb1s)
@@ -112,7 +111,7 @@ Assistant
 		/obj/item/crowbar/large)
 	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/restraints/handcuffs/cable/zipties, /obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/reagent_containers/pill/stalker/aptechka/civilian,/obj/item/flashlight/lantern,/obj/item/restraints/legcuffs/bola,/obj/item/ammo_box/magazine/stalker/sc45 = 2,/obj/item/clothing/accessory/patch/bandits)
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/stalker/konserva/shproti,/obj/item/storage/firstaid/stalker/civillian,/obj/item/flashlight/lantern,/obj/item/ammo_box/magazine/stalker/sc45 = 2,/obj/item/clothing/accessory/patch/bandits)
 	r_pocket = /obj/item/gun/ballistic/automatic/pistol/sip
 	l_pocket = pick(
 	/obj/item/megaphone,

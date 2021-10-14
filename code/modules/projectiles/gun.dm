@@ -190,9 +190,9 @@
 	if(durability)
 		percentage = (durability / (initial(durability)))*100
 		if(percentage >= 50)
-			to_chat(user, "<span class='notice'>Прочность: [percentage]%</span>")
+			to_chat(user, "<span class='notice'>Durability: [percentage]%</span>")
 		else
-			to_chat(user, "<span class='warning'>Прочность: [percentage]%</span>")
+			to_chat(user, "<span class='warning'>Durability: [percentage]%</span>")
 
 /obj/item/gun/equipped(mob/living/user, slot)
 	. = ..()
@@ -300,7 +300,7 @@
 		if(user.client && (user.client.prefs.chat_toggles & CHAT_LANGUAGE))
 			to_chat(user, "<span class='warning'>You can't shoot in the safezone!</span>")
 		else
-			to_chat(user, "<span class='warning'>Вы не можете стрелять в этой зоне!</span>")
+			to_chat(user, "<span class='warning'>You can't shoot in the safezone!</span>")
 		return 0
 	if(!handle_pins(user))
 		return FALSE
